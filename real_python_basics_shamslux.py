@@ -248,6 +248,117 @@ given_word = "bazinga"
 
 given_word[2:6]
 
+# String Methods! 
+
+name = "Stan Lee"
+
+print(name.lower()) # .lower()  forces  all  letters  to  become  lower  case
+
+print(name.upper()) # .upper()  forces  all  letters  to  become  upper  case
+
+name_whitespaces = "    Stan Lee    "
+name_whitespaces
+
+name_whitespaces.strip() # In  this  case  it  is  better  to  inspect  than  to  print!
+
+pokemon = "Pikachu"
+
+pokemon.startswith("Pi")
+pokemon.endswith("chu")
+
+""" 
+REVIEW 5 EXERCICES!  
+
+1 - Write a script that converts the following strings to lowercase:
+ "Animals", "Badger", "Honey Bee", "Honeybadger". Print each lowercase
+string on a separate line.
+
+2 - Repeat Exercise 1, but convert each string to uppercase instead of
+lowercase.
+
+3 - Write a script that removes whitespace from the following strings:
+string1 = " Filet Mignon"
+string2 = "Brisket "
+string3 = " Cheeseburger "
+Print out the strings with the whitespace removed
+
+4 - Write a script that prints out the result of .startswith("be") on each
+of the following strings:
+string1 = "Becomes"
+string2 = "becomes"
+string3 = "BEAR"
+string4 = " bEautiful"
+
+5 - Using the same four strings from Exercise 4, write a script that
+uses string methods to alter each string so that .startswith("be")
+returns True for all of them.
+"""
+
+# 1 OK!
+
+string_a = "Animals"
+string_b = "Badger"
+string_c = "Honey Bee"
+string_d = "Honeybadger"
+
+print(string_a.lower())
+print(string_b.lower())
+print(string_c.lower())
+print(string_d.lower())
+
+print(string_a.lower(), string_b.lower(), string_c.lower(), string_d.lower()) # I  thought  it  could  work  then  it  really  worked  !!  =D
+
+# 2 OK!
+ 
+string_a = "Animals"
+string_b = "Badger"
+string_c = "Honey Bee"
+string_d = "Honeybadger"
+
+print(string_a.upper(), string_b.upper(), string_c.upper(), string_d.upper())
+
+# 3 OK!
+
+string1 = " Filet Mignon"
+string2 = "Brisket "
+string3 = " Cheeseburger "
+
+string1.lstrip() 
+string2.rstrip()
+string3.strip()
+
+# 4 OK!
+
+string1 = "Becomes"
+string2 = "becomes"
+string3 = "BEAR"
+string4 = " bEautiful"
+
+print(string1.startswith("be")) 
+print(string2.startswith("be")) # Only  this  one  is  TRUE  because  the  method  is  case  sensitive  !!!
+print(string3.startswith("be"))
+print(string4.startswith("be"))
+
+# 5 OK!
+
+string1 = "Becomes"
+string2 = "becomes"
+string3 = "BEAR"
+string4 = " bEautiful"
+
+string1_new = string1.lower()
+string3_new = string3[0:2].lower() + string2[2:]
+string4_new = string4.lower()
+
+print(string1_new.startswith("be"))
+print(string2.startswith("be"))
+print(string3_new.startswith("be"))
+print(string3_new.startswith("be"))
+
+
+
+
+
 
 
 
