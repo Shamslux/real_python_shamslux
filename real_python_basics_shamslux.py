@@ -1,18 +1,14 @@
 """ 
 HELLO, WORLD! - FIRST PART OF COURSE BASED ON THE BOOK "PYTHON BASICS", FROM REAL PYTHON GROUP
-
 IMPORTANT! - Some examples I did take from the book, but others I've created by myself, playing with the book's own examples
 trying to create mine and also having fun while doing it!
-
 About me: Shamslux, from Brazil, Junior BI Analyst and Data Engineer! =)
 My passion for human languages is part of my love for computer languages, hehe.
 Human languages we can communicate if you are wishing to conctact me:
 Portuguese, French, Esperanto, Spanish (the ones probably I can use and understand better)
 Modern Hebrew and Arabic (I will struggle, but we can try to chat in them)
-
 Fun fact! -> I was a Middle/High-School teacher about 1 yr ago! =O
 I had no previous background in Data Science, hihi!
-
 Feel free to contact me on GitHub and to take this code to help yourself too!
 """ 
 
@@ -29,10 +25,8 @@ print(Hello, world)
 
 """ 
 REVIEW 1 EXERCICES!  
-
 1 - Write a script that IDLE won’t let you run because it has a syntax
 error.
-
 2 - Write a script that only crashes your program once it is already
 running because it has a run-time error.
 """
@@ -57,11 +51,9 @@ REVIEW 2 EXERCICES!
 
 1 - Using the interactive window, display some text on the screen by
 using the print() function.
-
 2 - Using the interactive window, display a string of text by saving the
 string to a variable, then reference the string in a print() function
 using the variable name.
-
 3 - Do each of the first two exercises again by first saving your code in
 a script and running it
 """
@@ -141,13 +133,9 @@ print(paragraph)
 
 """ 
 REVIEW 3 EXERCICES!  
-
 1 - Print a string that uses double quotation marks inside the string.
-
 2 - Print a string that uses an apostrophe inside the string.
-
 3 - Print a string that spans multiple lines, with whitespace preserved.
-
 4 - Print a string that is coded on multiple lines but displays on a single line.
 """
 
@@ -207,14 +195,10 @@ country[0:3]
 
 """ 
 REVIEW 4 EXERCICES!  
-
 1 - Create a string and print its length using the len() function.
-
 2 - Create two strings, concatenate them, and print the resulting
 string.
-
 3 - Create two strings and use concatenation to add a space inbetween them. Then print the result.
-
 4 - Print the string "zing" by using slice notation on the string
 "bazinga" to specify the correct range of characters.
 """
@@ -268,27 +252,22 @@ pokemon.endswith("chu")
 
 """ 
 REVIEW 5 EXERCICES!  
-
 1 - Write a script that converts the following strings to lowercase:
  "Animals", "Badger", "Honey Bee", "Honeybadger". Print each lowercase
 string on a separate line.
-
 2 - Repeat Exercise 1, but convert each string to uppercase instead of
 lowercase.
-
 3 - Write a script that removes whitespace from the following strings:
 string1 = " Filet Mignon"
 string2 = "Brisket "
 string3 = " Cheeseburger "
 Print out the strings with the whitespace removed
-
 4 - Write a script that prints out the result of .startswith("be") on each
 of the following strings:
 string1 = "Becomes"
 string2 = "becomes"
 string3 = "BEAR"
 string4 = " bEautiful"
-
 5 - Using the same four strings from Exercise 4, write a script that
 uses string methods to alter each string so that .startswith("be")
 returns True for all of them.
@@ -355,12 +334,128 @@ print(string2.startswith("be"))
 print(string3_new.startswith("be"))
 print(string3_new.startswith("be"))
 
+# Learning how to receive data from a user
 
+input()
 
+prompt = "Hey, what's up? "
+user_input = input(prompt)
 
+print("You said:", user_input)
 
+# NEED TO OVERWRITE THE CODE FROM THIS POINT BACKWARDS, BECAUSE
+# FORMATING ISSUES!
 
+""" 
+REVIEW 6 EXERCICES! 
 
+1 - Write a script that takes input from the user 
+and displays that input back
+
+2 - Write a script that takes input from the user and displays the input
+in lowercase.
+
+3 - Write a script that takes input from the user and displays 
+the number of characters inputted.
+"""
+
+# 1 OK!
+
+input("Hi there! Type something here, then I will show ya! -> ")
+
+# 2 OK!
+
+user_lower_word = input("Type here a whole upper case word and then I am going to convert it to lower case -> ")
+
+print("You've type: ", user_lower_word)
+print("Look how it becomes in lower case!")
+print("Here it is! ->", user_lower_word.lower())
+
+# 3 OK!
+
+user_length_word = input("Hello! I can count the lenght of any word you type! Type it! -> ")
+
+print("The lenght of the word is", len(user_length_word))
+
+# CHALLENGE (write more at home)
+
+country_by_user = input("Hello! Type the name of a country and I am going to answer back to you its first letter! ")
+
+print("The first letter is", country_by_user[0:1].upper())
+
+# Converting string to number
+
+num = input("Enter a number to be doubled: ") # The  input  result  will  always  be  a  string  !!!
+doubled_num = float(num) * 2 # Since  the  prompt  did  not  specified  we  convert  to  float(),  but  we  could  convert  to  int()
+print(doubled_num)
+
+# Converting number to string
+
+total_pancakes = 10
+print("I'm going to eat " + str(total_pancakes) + " pancakes!")
+
+# Another example with an arithmetic expression
+
+total_pancakes = 10
+eaten_pancakes = 5
+print("Now, only " + str(total_pancakes - eaten_pancakes) + " pancakes left")
+
+""" 
+REVIEW 7 EXERCICES!  
+  
+1 - Create a string containing an integer, then convert that string into
+an actual integer object using int(). Test that your new object is
+a number by multiplying it by another number and displaying the
+result.
+
+2 - Repeat the previous exercise, but use a floating-point number and
+float()
+
+3 - Create a string object and an integer object, then display 
+them sideby-side with a single print statement by using the str() function.
+
+4 - Write a script that gets two numbers from the user using the
+input() function twice, multiplies the numbers together, and
+displays the result. If the user enters 2 and 4, your program should
+print the following text:
+The product of 2 and 4 is 8.0.
+"""
+
+# 1 OK!
+
+string_num = '2'
+
+int_string_num = int(string_num)
+
+type(int_string_num)
+
+print(int_string_num)
+
+# 2 OK!
+
+string_num = '4.5'
+
+float_string_num = float(string_num)
+
+type(float_string_num)
+
+print(float_string_num)
+
+# 3 OK!
+
+a_string = 'Hello, I am the number '
+a_integer = 1
+
+print(a_string + str(a_integer))
+
+# 4 OK!
+
+num1 = input('Write a integer number here -> ')
+num2 = input('Write another integer number here -> ')
+
+calculation = int(num1) * int(num2)
+
+print('The product of', num1, 'and', num2, 'is', float(calculation))
 
 
 
