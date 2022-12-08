@@ -457,6 +457,50 @@ calculation = int(num1) * int(num2)
 
 print('The product of', num1, 'and', num2, 'is', float(calculation))
 
+# F-Strings (Formatted String Literals)
+
+name = 'Zaphod'
+heads = 2
+arms = 3
+
+print(f"{name} has {heads} heads and {arms} arms!")
+
+""" 
+REVIEW 8 EXERCICES!  
+  
+1 - Create a float object named weight with the value 0.2, and create
+a string object named animal with the value "newt". Then use these
+objects to print the following string using only string concatenation:
+0.2 kg is the weight of the newt.
+
+2 - Display the same string by using the .format() method and empty
+{} place-holders.
+
+3 - Display the same string using an f-string
+"""
+
+# 1 OK!
+
+ob_float = 0.2
+animal = "newt"
+
+print(str(ob_float), "is the weight of the", animal)
+
+# 2 OK!
+
+ob_float = 0.2
+animal = "newt"
+
+print("{} is the weight of the {}".format(ob_float, animal))
+
+# 3 OK!
+
+ob_float = 0.2
+animal = "newt"
+
+print(f"{ob_float} is the weight of the {animal}")
+
+
 
 
 
