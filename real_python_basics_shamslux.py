@@ -500,8 +500,119 @@ animal = "newt"
 
 print(f"{ob_float} is the weight of the {animal}")
 
+# Using .find() string method
 
+phrase = "the surprise is in here somewhere"
+phrase.find("surprise")
 
+# Using the string method .replace()
 
+my_story = "I'm telling you the truth; nothing but the truth!"
+my_story.replace("the truth", "lies")
 
+""" 
+REVIEW 9 EXERCICES!  
+  
+1 - In one line of code, display the result of trying to .find() 
+the substring "a" in the string "AAA". The result should be -1.
 
+2 - Replace every occurrence of the character "s" with "x" in the string
+"Somebody said something to Samantha.".
+
+3 - Write and test a script that accepts user input using the input()
+function and displays the result of trying to .find() a particular
+letter in that input.
+"""
+
+# 1 OK!
+
+print("AAA".find("a"))
+
+# 2 OK!
+
+phrase = "Somebody said something to Samantha"
+new_phrase = phrase.replace("S", "x")
+new_phrase_2 = new_phrase.replace("s", "x")
+
+print(new_phrase_2)
+
+# 3 OK!
+
+user_input = input("Write something here! ")
+
+print(user_input.find("a"))
+
+# Challenge - Turn Your User Into a L33t H4x0r
+
+"""
+Write a script called translate.py that asks the user for some input
+with the following prompt: Enter some text:. Then use the .replace()
+method to convert the text entered by the user into “leetspeak” by making the following changes to lower-case letters:
+
+• The letter a becomes 4
+• The letter b becomes 8
+• The letter e becomes 3
+• The letter l becomes 1
+• The letter o becomes 0
+• The letter s becomes 5
+• The letter t becomes 7
+
+Your program should then display the resulting string as output. Below is a sample run of the program:
+Enter some text: I like to eat eggs and spam.
+I 1ik3 70 347 3gg5 4nd 5p4m.
+"""
+
+# Translate.py OK!
+
+text = input("Hi there! Write some text here and it will be translated to 'leetspeak'! -> ")
+
+l_a = text.replace("a", "4")
+text_phase_2 = l_a.replace("A", "4")
+l_b = text_phase_2.replace("b", "8")
+text_phase_3 = l_b.replace("B", "8")
+l_e = text_phase_3.replace("e", "3")
+text_phase_4 = l_e.replace("E", "3")
+l_l = text_phase_4.replace("l", "1")
+text_phase_5 = l_l.replace("L", "1")
+l_o = text_phase_5.replace("o", "0")
+text_phase_6 = l_o.replace("O", "0")
+l_s = text_phase_6.replace("s", "5")
+text_phase_7 = l_s.replace("S", "5")
+l_t = text_phase_7.replace("t", "7")
+text_final_phase = l_t.replace("T", "7")
+
+print(f"Your text, in 'leetspeak', has become like that: {text_final_phase}")
+
+""" 
+REVIEW 10 EXERCICES!  
+  
+1 - Write a script that creates the two variables, num1 and num2. Both
+num1 and num2 should be assigned the integer literal 25,000,000,
+one written with underscored and one without. Print num1 and num2
+on two separate lines.
+
+2 - Write a script that assigns the floating-point literal 175000.0 to the
+variable num using exponential notation, and then prints num in the
+interactive window.
+
+3 - In IDLE’s interactive window, try and find the smallest exponent N
+so that 2e<N>, where <N> is replaced with your number, returns inf.
+"""
+
+# 1 OK!
+
+num1 = 25000000
+num2 = 25_000_000
+
+print(num1)
+print(num2)
+
+# 2 OK!
+
+num = 175e4
+
+print(num)
+
+# 3 OK!
+
+print(2e400)
